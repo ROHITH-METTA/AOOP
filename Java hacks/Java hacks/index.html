@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="user-welcome">
+            <i data-lucide="user"></i>
+            <span>Welcome!</span>
+        </div>
+        <i data-lucide="bell"></i>
+    </header>
+
+    <main>
+        <section class="highlights">
+            <h2>Highlights <span>(4)</span></h2>
+            <div class="highlight-scroll">
+                <div class="highlight-card">
+                    <i data-lucide="clock"></i>
+                    <p>6 FREE hours of recording time every month + other superpowers</p>
+                </div>
+                <div class="highlight-card">
+                    <i data-lucide="zap"></i>
+                    <p>Instant AI-powered summaries</p>
+                </div>
+                <div class="highlight-card">
+                    <i data-lucide="book-open"></i>
+                    <p>Access to premium study materials</p>
+                </div>
+                <div class="highlight-card">
+                    <i data-lucide="users"></i>
+                    <p>Collaborate with study groups</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <h2>Explore Sample QuickTakes</h2>
+            <div class="explore-buttons">
+                <button id="studyGuide">
+                    <i data-lucide="file-text"></i>
+                    Study Guide
+                </button>
+                <button id="flashcards">
+                    <i data-lucide="layers"></i>
+                    Flashcards
+                </button>
+                <button id="videos">
+                    <i data-lucide="video"></i>
+                    Videos
+                </button>
+            </div>
+        </section>
+
+        
+        <section class="drag-drop">
+            <h2>Upload Your Files</h2>
+            <div id="dropZone" class="drop-zone">
+                <i data-lucide="upload-cloud"></i>
+                <p>Drag and drop files here or click to upload</p>
+                <input type="file" id="fileInput" multiple hidden>
+            </div>
+            <div id="fileList" class="file-list"></div> <!-- Added to show uploaded files -->
+        </section>
+        
+    </main>
+
+    <footer>
+        <button class="footer-btn">
+            <i data-lucide="home"></i>
+            Home
+        </button>
+        <button class="footer-btn">
+            <i data-lucide="book"></i>
+            Library
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

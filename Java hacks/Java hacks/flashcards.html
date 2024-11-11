@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Flashcards Page</h1>
+    <p id="debug-info">Debugging information will appear here.</p>
+    <div id="flashcards-container"></div>
+    
+    <script>
+        console.log('Flashcards page loaded');
+        document.getElementById('debug-info').textContent = 'Flashcards page loaded. Waiting for data...';
+    </script>
+    <script src="{{ url_for('static', filename='flashcards.js') }}"></script>
+</body>
+</html>
